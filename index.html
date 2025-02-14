@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BIT GPA Calculator</h2>
+        <label for="year">Select Year:</label>
+        <select id="year" onchange="loadSubjects()">
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+        </select>
+        <br><br>
+        <label for="semester">Select Sem:</label>
+        <select id="semester" onchange="loadSubjects()">
+            <option value="1">1st Sem</option>
+            <option value="2">2nd Sem</option>
+        </select>
+        
+        
+        <table id="subjectTable">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Credit</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button onclick="calculateGPA()">Calculate GPA</button>
+
+        <div class="gpa-result">
+            <h3>Semester GPA: <span id="semesterGPA">-</span></h3>
+            <h3>Year GPA: <span id="yearGPA">-</span></h3>
+            <br>
+            <h3>Overall GPA: <span id="overallGPA">-</span></h3>
+        </div>
+        
+        <di clss="Yourclass">
+            <h3>Classification: <span id="classification">-</span></h3>
+        </di>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
