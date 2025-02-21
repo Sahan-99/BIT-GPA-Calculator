@@ -38,6 +38,19 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+.report{
+    padding: 10px 15px;
+    border: none;
+    background: #ff3300;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.report:hover {
+    background: #e00000;
+}
+
 .gpa-result {
     font-size: 15px;
     margin-top: 20px;
@@ -47,7 +60,7 @@ button:hover {
     color: blue;
 }
 
-.yourclass{
+.Yourclass{
     font-size: 15px;
 }
 
