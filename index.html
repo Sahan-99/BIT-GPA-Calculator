@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIT GPA Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <link href="logo.png" rel="icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    
 </head>
 <body>
     <div class="container">
@@ -37,17 +39,21 @@
         <button onclick="calculateGPA()">Calculate GPA</button>
 
         <div class="gpa-result">
-            <h3>Semester GPA: <span id="semesterGPA">-</span></h3>
-            <h3>Year GPA: <span id="yearGPA">-</span></h3>
+            <h4>Semester GPA: <span id="semesterGPA">-</span></h4>
+            <h4>Year GPA: <span id="yearGPA">-</span></h4>
             <br>
-            <h3>Overall GPA: <span id="overallGPA">-</span></h3>
+            <h4>Overall GPA: <span id="overallGPA">-</span></h4>
         </div>
         
-        <di clss="Yourclass">
-            <h3>Classification: <span id="classification">-</span></h3>
-        </di>
+        <div class="Yourclass">
+            <h4>Classification: <span id="classification">-</span></h4>
+        </div>
     </div>
 
+    <button class="report" onclick="generateReport()">Generate Report</button>
+    
     <script src="script.js"></script>
+    
+
 </body>
 </html>
